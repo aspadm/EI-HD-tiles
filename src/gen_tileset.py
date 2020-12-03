@@ -244,8 +244,9 @@ def sanitize_def(map_def):
                     part["base"] = None
                     break
 
-                part["base"] = get_image_path(os.path.join(TILES_DIR, part["base"]))
-                test_err(part["base"], "Base layer file {} not found".format(part["base"]))
+                tmp_base = get_image_path(os.path.join(TILES_DIR, part["base"]))
+                test_err(tmp_base, "Base layer file {} not found".format(part["base"]))
+                part["base"] = tmp_base
 
                 if "rotation" not in part.keys():
                     part.update({"rotation": 0})
@@ -258,8 +259,10 @@ def sanitize_def(map_def):
             else: # mask
                 test_err("mask" in part.keys(), "No mask layer found")
                 test_err(isinstance(part["mask"], str), "Incorrect mask path format")
-                part["mask"] = get_image_path(os.path.join(MASKS_DIR, part["mask"]))
-                test_err(part["mask"], "Mask layer file {} not found".format(part["mask"]))
+
+                tmp_mask = get_image_path(os.path.join(MASKS_DIR, part["mask"]))
+                test_err(tmp_mask, "Mask layer file {} not found".format(part["mask"]))
+                part["mask"] = tmp_mask
 
                 if "rotation" not in part.keys():
                     part.update({"rotation": 0})
