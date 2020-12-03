@@ -7,7 +7,9 @@ def exit(n=0):
     sys.exit(n)
 
 if __name__ == "__main__":
-    os.chdir(os.path.dirname(sys.argv[0]))
+    if os.environ.get("DONT_CHANGE_CWD", "0").lower() not in ("1", "yes", "true", "on"):
+        os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
+
     if len(sys.argv) != 2:
         print("Usage: {} mask_folder".format(sys.argv[0]))
         exit(1)

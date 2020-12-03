@@ -337,7 +337,9 @@ def read_config():
     TILE_RES = FRAME_RES * 8
 
 if __name__ == "__main__":
-    os.chdir(os.path.dirname(sys.argv[0]))
+    if os.environ.get("DONT_CHANGE_CWD", "0").lower() not in ("1", "yes", "true", "on"):
+        os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
+
     if len(sys.argv) < 2:
         print("Usage: {:} <map.yaml> [map2.yaml ...]".format(sys.argv[0]))
         exit(1)

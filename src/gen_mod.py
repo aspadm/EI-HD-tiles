@@ -1,13 +1,16 @@
 import sys
 import os
 import yaml
-import gen_tileset
-from gen_tileset import test_err, convert_tileset
 import datetime
 import subprocess
 import zipfile
 import tempfile
 import time
+
+# Add scripts dir to python search path
+sys.path.append(os.path.dirname(os.path.abspath(sys.argv[0])))
+import gen_tileset
+from gen_tileset import test_err, convert_tileset
 
 def exit(n=0):
     os.system("pause")
@@ -155,7 +158,9 @@ textures.res=textures.res""".format(
         z.write(os.path.join(OUT_DIR, "textures.res"), arcname=os.path.join(mod_def["mod_name"], "textures.res"))
 
 if __name__ == "__main__":
-    os.chdir(os.path.dirname(sys.argv[0]))
+    if os.environ.get("DONT_CHANGE_CWD", "0").lower() not in ("1", "yes", "true", "on"):
+        os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
+
     if len(sys.argv) != 2:
         print("Usage: {} <mod.yaml>".format(sys.argv[0]))
         exit(1)
