@@ -1,0 +1,1378 @@
+map_name: "ZoneMainMenuNew"
+tiles:
+  - # Tile 0 (atlas 0, row 0, column 0)
+    - base: "grass/common/e"
+      rotation: 0
+  - # Tile 1 (atlas 0, row 0, column 1)
+    - base: "grass/common/a"
+      rotation: 0
+  - # Tile 2 (atlas 0, row 0, column 2)
+    - base: "grass/common/c"
+      rotation: 0
+  - # Tile 3 (atlas 0, row 0, column 3)
+    - base: "grass/common/b"
+      rotation: 0
+  - # Tile 4 (atlas 0, row 0, column 4)
+    - base: "grass/common/d"
+      rotation: 0
+  - # Tile 5 (atlas 0, row 0, column 5)
+    - base: "stone/lime/b"
+      rotation: 0
+  - # Tile 6 (atlas 0, row 0, column 6)
+    - base: "stone/lime/a"
+      rotation: 0
+  - # Tile 7 (atlas 0, row 0, column 7)
+    - base: "grass/dark/a"
+      rotation: 0
+  - # Tile 8 (atlas 0, row 1, column 0)
+    - base: "grass/irregular/1"
+      rotation: 0
+  - # Tile 9 (atlas 0, row 1, column 1)
+    - base: "water/still/1"
+      rotation: 0
+  - # Tile 10 (atlas 0, row 1, column 2)
+    - base: "water/still/2"
+      rotation: 0
+  - # Tile 11 (atlas 0, row 1, column 3)
+    - base: "water/still/3"
+      rotation: 0
+  - # Tile 12 (atlas 0, row 1, column 4)
+    - base: "water/still/4"
+      rotation: 0
+  - # Tile 13 (atlas 0, row 1, column 5)
+    - base: "water/still/5"
+      rotation: 0
+  - # Tile 14 (atlas 0, row 1, column 6)
+    - base: "water/still/6"
+      rotation: 0
+  - # Tile 15 (atlas 0, row 1, column 7)
+    - base: "water/still/7"
+      rotation: 0
+  - # Tile 16 (atlas 0, row 2, column 0)
+    - base: "water/still/8"
+      rotation: 0
+  - # Tile 17 (atlas 0, row 2, column 1)
+    - base: "water/still/9"
+      rotation: 0
+  - # Tile 18 (atlas 0, row 2, column 2)
+    - base: "water/still/10"
+      rotation: 0
+  - # Tile 19 (atlas 0, row 2, column 3)
+    - base: "water/still/11"
+      rotation: 0
+  - # Tile 20 (atlas 0, row 2, column 4)
+    - base: "water/still/12"
+      rotation: 0
+  - # Tile 21 (atlas 0, row 2, column 5)
+    - base: "water/still/13"
+      rotation: 0
+  - # Tile 22 (atlas 0, row 2, column 6)
+    - base: "water/still/14"
+      rotation: 0
+  - # Tile 23 (atlas 0, row 2, column 7)
+    - base: "water/still/15"
+      rotation: 0
+  - # Tile 24 (atlas 0, row 3, column 0)
+    - base: "water/still/16"
+      rotation: 0
+  - # Tile 25 (atlas 0, row 3, column 1)
+    - base: "water/still/17"
+      rotation: 0
+  - # Tile 26 (atlas 0, row 3, column 2)
+    - base: "water/still/18"
+      rotation: 0
+  - # Tile 27 (atlas 0, row 3, column 3)
+    - base: "water/still/19"
+      rotation: 0
+  - # Tile 28 (atlas 0, row 3, column 4)
+    - base: "water/still/20"
+      rotation: 0
+  - # Tile 29 (atlas 0, row 3, column 5)
+    - base: "water/still/21"
+      rotation: 0
+  - # Tile 30 (atlas 0, row 3, column 6)
+    - base: "water/still/22"
+      rotation: 0
+  - # Tile 31 (atlas 0, row 3, column 7)
+    - base: "water/still/23"
+      rotation: 0
+  - # Tile 32 (atlas 0, row 4, column 0)
+    - base: "water/still/24"
+      rotation: 0
+  - # Tile 33 (atlas 0, row 4, column 1)
+    - base: "water/still/25"
+      rotation: 0
+  - # Tile 34 (atlas 0, row 4, column 2)
+    - base: "water/still/26"
+      rotation: 0
+  - # Tile 35 (atlas 0, row 4, column 3)
+    - base: "water/still/27"
+      rotation: 0
+  - # Tile 36 (atlas 0, row 4, column 4)
+    - base: "water/still/28"
+      rotation: 0
+  - # Tile 37 (atlas 0, row 4, column 5)
+    - base: "water/still/29"
+      rotation: 0
+  - # Tile 38 (atlas 0, row 4, column 6)
+    - base: "water/still/30"
+      rotation: 0
+  - # Tile 39 (atlas 0, row 4, column 7)
+    - base: "water/still/31"
+      rotation: 0
+  - # Tile 40 (atlas 0, row 5, column 0)
+    - base: "water/still/32"
+      rotation: 0
+  - # Tile 41 (atlas 0, row 5, column 1)
+    - base: "ground/dry/a"
+      rotation: 0
+  - # Tile 42 (atlas 0, row 5, column 2)
+    - base: "grass/common/d"
+      rotation: 0
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/b"
+      rotation: 180
+  - # Tile 43 (atlas 0, row 5, column 3)
+    - base: "grass/common/a"
+      rotation: 90
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/b"
+      rotation: 90
+  - # Tile 44 (atlas 0, row 5, column 4)
+    - base: "grass/common/b"
+      rotation: 180
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/a"
+      rotation: 0
+  - # Tile 45 (atlas 0, row 5, column 5)
+    - base: "grass/common/c"
+      rotation: 180
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/a"
+      rotation: 180
+  - # Tile 46 (atlas 0, row 5, column 6)
+    - base: "grass/common/d"
+      rotation: 90
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/b"
+      rotation: 90
+  - # Tile 47 (atlas 0, row 5, column 7)
+    - base: "grass/common/b"
+      rotation: 0
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/b"
+      rotation: 270
+  - # Tile 48 (atlas 0, row 6, column 0)
+    - base: "grass/common/b"
+      rotation: 0
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/a"
+      rotation: 180
+  - # Tile 49 (atlas 0, row 6, column 1)
+    - base: "grass/common/b"
+      rotation: 270
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/a"
+      rotation: 0
+  - # Tile 50 (atlas 0, row 6, column 2)
+    - base: "grass/common/e"
+      rotation: 90
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/a"
+      rotation: 180
+  - # Tile 51 (atlas 0, row 6, column 3)
+    - base: "grass/common/d"
+      rotation: 270
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/b"
+      rotation: 0
+  - # Tile 52 (atlas 0, row 6, column 4)
+    - base: "stone/lime/b"
+      rotation: 270
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/b"
+      rotation: 270
+  - # Tile 53 (atlas 0, row 6, column 5)
+    - base: "stone/lime/a"
+      rotation: 180
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/d"
+      rotation: 90
+  - # Tile 54 (atlas 0, row 6, column 6)
+    - base: "stone/lime/b"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/e"
+      rotation: 90
+  - # Tile 55 (atlas 0, row 6, column 7)
+    - base: "stone/lime/a"
+      rotation: 180
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/d"
+      rotation: 270
+  - # Tile 56 (atlas 0, row 7, column 0)
+    - base: "stone/lime/b"
+      rotation: 90
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/a"
+      rotation: 180
+  - # Tile 57 (atlas 0, row 7, column 1)
+    - base: "stone/lime/b"
+      rotation: 90
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/e"
+      rotation: 270
+  - # Tile 58 (atlas 0, row 7, column 2)
+    - base: "stone/lime/b"
+      rotation: 180
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/b"
+      rotation: 180
+  - # Tile 59 (atlas 0, row 7, column 3)
+    - base: "stone/lime/a"
+      rotation: 270
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/b"
+      rotation: 90
+  - # Tile 60 (atlas 0, row 7, column 4)
+    - base: "stone/lime/b"
+      rotation: 180
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/e"
+      rotation: 0
+  - # Tile 61 (atlas 0, row 7, column 5)
+    - base: "ground/water/a"
+      rotation: 0
+  - # Tile 62 (atlas 0, row 7, column 6)
+    - base: "grass/common/e"
+      rotation: 90
+    - mask: "1/half"
+      rotation: 90
+      inverted: false
+    - base: "grass/irregular/8"
+      rotation: 270
+  - # Tile 63 (atlas 0, row 7, column 7)
+    - base: "grass/irregular/9"
+      rotation: 90
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "stone/lime/a"
+      rotation: 0
+  - # Tile 64 (atlas 1, row 0, column 0)
+    - base: "grass/common/d"
+      rotation: 0
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/a"
+      rotation: 180
+  - # Tile 65 (atlas 1, row 0, column 1)
+    - base: "grass/common/b"
+      rotation: 90
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/a"
+      rotation: 90
+  - # Tile 66 (atlas 1, row 0, column 2)
+    - base: "grass/common/e"
+      rotation: 90
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/a"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: false
+    - base: "grass/common/e"
+      rotation: 90
+  - # Tile 67 (atlas 1, row 0, column 3)
+    - base: "grass/common/c"
+      rotation: 90
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/a"
+      rotation: 90
+  - # Tile 68 (atlas 1, row 0, column 4)
+    - base: "grass/common/d"
+      rotation: 90
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/b"
+      rotation: 270
+  - # Tile 69 (atlas 1, row 0, column 5)
+    - base: "grass/common/b"
+      rotation: 270
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/a"
+      rotation: 0
+  - # Tile 70 (atlas 1, row 0, column 6)
+    - base: "grass/common/e"
+      rotation: 270
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/b"
+      rotation: 180
+  - # Tile 71 (atlas 1, row 0, column 7)
+    - base: "grass/common/b"
+      rotation: 90
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/a"
+      rotation: 270
+  - # Tile 72 (atlas 1, row 1, column 0)
+    - base: "grass/common/e"
+      rotation: 90
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/a"
+      rotation: 90
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/e"
+      rotation: 90
+  - # Tile 73 (atlas 1, row 1, column 1)
+    - base: "grass/common/b"
+      rotation: 90
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "stone/lime/b"
+      rotation: 270
+  - # Tile 74 (atlas 1, row 1, column 2)
+    - base: "grass/common/c"
+      rotation: 0
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "grass/dark/a"
+      rotation: 0
+  - # Tile 75 (atlas 1, row 1, column 3)
+    - base: "grass/common/c"
+      rotation: 0
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "grass/dark/a"
+      rotation: 270
+  - # Tile 76 (atlas 1, row 1, column 4)
+    - base: "grass/common/d"
+      rotation: 180
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "grass/dark/a"
+      rotation: 0
+  - # Tile 77 (atlas 1, row 1, column 5)
+    - base: "grass/common/d"
+      rotation: 90
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "grass/dark/a"
+      rotation: 270
+  - # Tile 78 (atlas 1, row 1, column 6)
+    - base: "grass/common/b"
+      rotation: 90
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "grass/dark/a"
+      rotation: 270
+  - # Tile 79 (atlas 1, row 1, column 7)
+    - base: "grass/common/c"
+      rotation: 270
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "grass/dark/a"
+      rotation: 180
+  - # Tile 80 (atlas 1, row 2, column 0)
+    - base: "grass/common/c"
+      rotation: 90
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "grass/dark/a"
+      rotation: 0
+  - # Tile 81 (atlas 1, row 2, column 1)
+    - base: "grass/common/e"
+      rotation: 180
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "grass/dark/a"
+      rotation: 180
+  - # Tile 82 (atlas 1, row 2, column 2)
+    - base: "grass/common/a"
+      rotation: 180
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "grass/dark/a"
+      rotation: 270
+  - # Tile 83 (atlas 1, row 2, column 3)
+    - base: "grass/common/d"
+      rotation: 90
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "grass/dark/a"
+      rotation: 90
+  - # Tile 84 (atlas 1, row 2, column 4)
+    - base: "grass/common/c"
+      rotation: 180
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "grass/dark/a"
+      rotation: 270
+  - # Tile 85 (atlas 1, row 2, column 5)
+    - base: "grass/common/d"
+      rotation: 270
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "grass/dark/a"
+      rotation: 270
+  - # Tile 86 (atlas 1, row 2, column 6)
+    - base: "grass/common/e"
+      rotation: 270
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "grass/dark/a"
+      rotation: 0
+  - # Tile 87 (atlas 1, row 2, column 7)
+    - base: "grass/common/d"
+      rotation: 180
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "grass/dark/a"
+      rotation: 90
+  - # Tile 88 (atlas 1, row 3, column 0)
+    - base: "grass/common/d"
+      rotation: 0
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "grass/dark/a"
+      rotation: 180
+  - # Tile 89 (atlas 1, row 3, column 1)
+    - base: "grass/common/c"
+      rotation: 270
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "grass/dark/a"
+      rotation: 0
+  - # Tile 90 (atlas 1, row 3, column 2)
+    - base: "grass/dark/a"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/e"
+      rotation: 180
+  - # Tile 91 (atlas 1, row 3, column 3)
+    - base: "grass/dark/a"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/b"
+      rotation: 180
+  - # Tile 92 (atlas 1, row 3, column 4)
+    - base: "grass/dark/a"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/e"
+      rotation: 270
+  - # Tile 93 (atlas 1, row 3, column 5)
+    - base: "grass/dark/a"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/a"
+      rotation: 270
+  - # Tile 94 (atlas 1, row 3, column 6)
+    - base: "grass/dark/a"
+      rotation: 90
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/a"
+      rotation: 270
+  - # Tile 95 (atlas 1, row 3, column 7)
+    - base: "grass/dark/a"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/c"
+      rotation: 180
+  - # Tile 96 (atlas 1, row 4, column 0)
+    - base: "grass/dark/a"
+      rotation: 90
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/c"
+      rotation: 0
+  - # Tile 97 (atlas 1, row 4, column 1)
+    - base: "grass/irregular/3"
+      rotation: 0
+  - # Tile 98 (atlas 1, row 4, column 2)
+    - base: "grass/irregular/6"
+      rotation: 0
+  - # Tile 99 (atlas 1, row 4, column 3)
+    - base: "grass/irregular/2"
+      rotation: 0
+  - # Tile 100 (atlas 1, row 4, column 4)
+    - base: "grass/irregular/7"
+      rotation: 0
+  - # Tile 101 (atlas 1, row 4, column 5)
+    - base: "grass/irregular/5"
+      rotation: 0
+  - # Tile 102 (atlas 1, row 4, column 6)
+    - base: "grass/irregular/4"
+      rotation: 0
+  - # Tile 103 (atlas 1, row 4, column 7)
+    - base: "grass/common/a"
+      rotation: 180
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 270
+  - # Tile 104 (atlas 1, row 5, column 0)
+    - base: "grass/common/b"
+      rotation: 270
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 0
+  - # Tile 105 (atlas 1, row 5, column 1)
+    - base: "grass/common/e"
+      rotation: 270
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 180
+  - # Tile 106 (atlas 1, row 5, column 2)
+    - base: "grass/common/b"
+      rotation: 270
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 270
+  - # Tile 107 (atlas 1, row 5, column 3)
+    - base: "grass/common/d"
+      rotation: 180
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 180
+  - # Tile 108 (atlas 1, row 5, column 4)
+    - base: "grass/common/b"
+      rotation: 90
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 270
+  - # Tile 109 (atlas 1, row 5, column 5)
+    - base: "stone/lime/b"
+      rotation: 0
+    - mask: "1/corner"
+      rotation: 90
+      inverted: false
+    - base: "ground/dry/a"
+      rotation: 90
+  - # Tile 110 (atlas 1, row 5, column 6)
+    - base: "stone/lime/b"
+      rotation: 180
+    - mask: "1/corner"
+      rotation: 90
+      inverted: false
+    - base: "ground/dry/a"
+      rotation: 0
+  - # Tile 111 (atlas 1, row 5, column 7)
+    - base: "stone/lime/a"
+      rotation: 180
+    - mask: "1/corner"
+      rotation: 90
+      inverted: false
+    - base: "ground/dry/a"
+      rotation: 270
+  - # Tile 112 (atlas 1, row 6, column 0)
+    - base: "stone/lime/a"
+      rotation: 90
+    - mask: "1/corner"
+      rotation: 90
+      inverted: false
+    - base: "ground/dry/a"
+      rotation: 0
+  - # Tile 113 (atlas 1, row 6, column 1)
+    - base: "stone/lime/b"
+      rotation: 90
+    - mask: "1/corner"
+      rotation: 90
+      inverted: false
+    - base: "ground/dry/a"
+      rotation: 0
+  - # Tile 114 (atlas 1, row 6, column 2)
+    - base: "stone/lime/b"
+      rotation: 0
+    - mask: "1/corner"
+      rotation: 90
+      inverted: false
+    - base: "ground/dry/a"
+      rotation: 0
+  - # Tile 115 (atlas 1, row 6, column 3)
+    - base: "grass/common/c"
+      rotation: 270
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 180
+  - # Tile 116 (atlas 1, row 6, column 4)
+    - base: "grass/common/b"
+      rotation: 180
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 270
+  - # Tile 117 (atlas 1, row 6, column 5)
+    - base: "grass/common/e"
+      rotation: 0
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 180
+  - # Tile 118 (atlas 1, row 6, column 6)
+    - base: "grass/common/e"
+      rotation: 90
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 180
+  - # Tile 119 (atlas 1, row 6, column 7)
+    - base: "grass/common/c"
+      rotation: 0
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 180
+  - # Tile 120 (atlas 1, row 7, column 0)
+    - base: "ground/dry/a"
+      rotation: 270
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: true
+    - base: "stone/lime/a"
+      rotation: 0
+  - # Tile 121 (atlas 1, row 7, column 1)
+    - base: "ground/dry/a"
+      rotation: 90
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: true
+    - base: "stone/lime/b"
+      rotation: 180
+  - # Tile 122 (atlas 1, row 7, column 2)
+    - base: "ground/dry/a"
+      rotation: 180
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: true
+    - base: "stone/lime/a"
+      rotation: 270
+  - # Tile 123 (atlas 1, row 7, column 3)
+    - base: "ground/dry/a"
+      rotation: 180
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: true
+    - base: "stone/lime/a"
+      rotation: 0
+  - # Tile 124 (atlas 1, row 7, column 4)
+    - base: "ground/dry/a"
+      rotation: 180
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: true
+    - base: "stone/lime/b"
+      rotation: 0
+  - # Tile 125 (atlas 1, row 7, column 5)
+    - base: "grass/common/b"
+      rotation: 0
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "grass/irregular/7"
+      rotation: 90
+  - # Tile 126 (atlas 1, row 7, column 6)
+    - base: "stone/lime/a"
+      rotation: 270
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "grass/irregular/8"
+      rotation: 0
+  - # Tile 127 (atlas 1, row 7, column 7)
+    - base: "grass/irregular/2"
+      rotation: 270
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/c"
+      rotation: 180
+  - # Tile 128 (atlas 2, row 0, column 0)
+    - base: "grass/common/c"
+      rotation: 180
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "grass/irregular/6"
+      rotation: 180
+  - # Tile 129 (atlas 2, row 0, column 1)
+    - base: "grass/common/d"
+      rotation: 270
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "grass/irregular/6"
+      rotation: 180
+  - # Tile 130 (atlas 2, row 0, column 2)
+    - base: "grass/common/b"
+      rotation: 0
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "grass/irregular/6"
+      rotation: 180
+  - # Tile 131 (atlas 2, row 0, column 3)
+    - base: "grass/common/d"
+      rotation: 90
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "grass/irregular/2"
+      rotation: 90
+  - # Tile 132 (atlas 2, row 0, column 4)
+    - base: "grass/common/c"
+      rotation: 0
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "grass/irregular/6"
+      rotation: 180
+  - # Tile 133 (atlas 2, row 0, column 5)
+    - base: "grass/common/d"
+      rotation: 180
+    - mask: "1/half"
+      rotation: 0
+      inverted: false
+    - base: "grass/irregular/2"
+      rotation: 90
+  - # Tile 134 (atlas 2, row 0, column 6)
+    - base: "ground/water/a"
+      rotation: 90
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/c"
+      rotation: 180
+  - # Tile 135 (atlas 2, row 0, column 7)
+    - base: "ground/water/a"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/a"
+      rotation: 0
+  - # Tile 136 (atlas 2, row 1, column 0)
+    - base: "ground/water/a"
+      rotation: 90
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/b"
+      rotation: 180
+  - # Tile 137 (atlas 2, row 1, column 1)
+    - base: "ground/water/a"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/d"
+      rotation: 90
+  - # Tile 138 (atlas 2, row 1, column 2)
+    - base: "ground/water/a"
+      rotation: 270
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/c"
+      rotation: 0
+  - # Tile 139 (atlas 2, row 1, column 3)
+    - base: "stone/lime/b"
+      rotation: 180
+    - mask: "1/half"
+      rotation: 180
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 270
+  - # Tile 140 (atlas 2, row 1, column 4)
+    - base: "stone/lime/b"
+      rotation: 0
+    - mask: "1/half"
+      rotation: 180
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 0
+  - # Tile 141 (atlas 2, row 1, column 5)
+    - base: "stone/lime/a"
+      rotation: 0
+    - mask: "1/half"
+      rotation: 180
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 270
+  - # Tile 142 (atlas 2, row 1, column 6)
+    - base: "stone/lime/b"
+      rotation: 90
+    - mask: "1/half"
+      rotation: 180
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 90
+  - # Tile 143 (atlas 2, row 1, column 7)
+    - base: "stone/lime/a"
+      rotation: 270
+    - mask: "1/half"
+      rotation: 180
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 270
+  - # Tile 144 (atlas 2, row 2, column 0)
+    - base: "stone/lime/a"
+      rotation: 0
+    - mask: "1/half"
+      rotation: 180
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 0
+  - # Tile 145 (atlas 2, row 2, column 1)
+    - base: "grass/common/e"
+      rotation: 270
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "grass/irregular/7"
+      rotation: 180
+  - # Tile 146 (atlas 2, row 2, column 2)
+    - base: "grass/common/d"
+      rotation: 90
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "grass/irregular/5"
+      rotation: 90
+  - # Tile 147 (atlas 2, row 2, column 3)
+    - base: "grass/common/c"
+      rotation: 0
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "grass/irregular/2"
+      rotation: 270
+  - # Tile 148 (atlas 2, row 2, column 4)
+    - base: "grass/common/a"
+      rotation: 90
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "grass/irregular/2"
+      rotation: 270
+  - # Tile 149 (atlas 2, row 2, column 5)
+    - base: "stone/lime/a"
+      rotation: 270
+    - mask: "1/half"
+      rotation: 180
+      inverted: false
+    - base: "grass/irregular/8"
+      rotation: 0
+  - # Tile 150 (atlas 2, row 2, column 6)
+    - base: "stone/lime/b"
+      rotation: 0
+    - mask: "1/half"
+      rotation: 180
+      inverted: false
+    - base: "ground/dry/a"
+      rotation: 0
+  - # Tile 151 (atlas 2, row 2, column 7)
+    - base: "stone/lime/a"
+      rotation: 180
+    - mask: "1/half"
+      rotation: 180
+      inverted: false
+    - base: "ground/dry/a"
+      rotation: 90
+  - # Tile 152 (atlas 2, row 3, column 0)
+    - base: "stone/lime/a"
+      rotation: 270
+    - mask: "1/half"
+      rotation: 180
+      inverted: false
+    - base: "ground/dry/a"
+      rotation: 270
+  - # Tile 153 (atlas 2, row 3, column 1)
+    - base: "stone/lime/b"
+      rotation: 270
+    - mask: "1/half"
+      rotation: 180
+      inverted: false
+    - base: "ground/dry/a"
+      rotation: 0
+  - # Tile 154 (atlas 2, row 3, column 2)
+    - base: "stone/lime/b"
+      rotation: 270
+    - mask: "1/half"
+      rotation: 180
+      inverted: false
+    - base: "ground/dry/a"
+      rotation: 270
+  - # Tile 155 (atlas 2, row 3, column 3)
+    - base: "grass/irregular/1"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/c"
+      rotation: 0
+  - # Tile 156 (atlas 2, row 3, column 4)
+    - base: "grass/irregular/1"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/d"
+      rotation: 0
+  - # Tile 157 (atlas 2, row 3, column 5)
+    - base: "grass/irregular/1"
+      rotation: 270
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/e"
+      rotation: 180
+  - # Tile 158 (atlas 2, row 3, column 6)
+    - base: "grass/irregular/1"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/a"
+      rotation: 90
+  - # Tile 159 (atlas 2, row 3, column 7)
+    - base: "ground/water/a"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: true
+    - base: "stone/lime/a"
+      rotation: 270
+  - # Tile 160 (atlas 2, row 4, column 0)
+    - base: "ground/water/a"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: true
+    - base: "stone/lime/a"
+      rotation: 90
+  - # Tile 161 (atlas 2, row 4, column 1)
+    - base: "ground/water/a"
+      rotation: 270
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: true
+    - base: "stone/lime/b"
+      rotation: 90
+  - # Tile 162 (atlas 2, row 4, column 2)
+    - base: "ground/dry/a"
+      rotation: 180
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: true
+    - base: "stone/lime/a"
+      rotation: 90
+    - mask: "1/diagonal"
+      rotation: 180
+      inverted: true
+    - base: "stone/lime/a"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 270
+      inverted: true
+    - base: "grass/common/b"
+      rotation: 90
+  - # Tile 163 (atlas 2, row 4, column 3)
+    - base: "ground/dry/a"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: true
+    - base: "stone/lime/a"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 180
+      inverted: true
+    - base: "stone/lime/b"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 270
+      inverted: true
+    - base: "grass/common/c"
+      rotation: 0
+  - # Tile 164 (atlas 2, row 4, column 4)
+    - base: "stone/lime/a"
+      rotation: 180
+    - mask: "1/corner"
+      rotation: 90
+      inverted: false
+    - base: "grass/irregular/8"
+      rotation: 90
+  - # Tile 165 (atlas 2, row 4, column 5)
+    - base: "stone/lime/a"
+      rotation: 90
+    - mask: "1/corner"
+      rotation: 90
+      inverted: false
+    - base: "grass/irregular/2"
+      rotation: 90
+  - # Tile 166 (atlas 2, row 4, column 6)
+    - base: "grass/irregular/1"
+      rotation: 180
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: true
+    - base: "stone/lime/b"
+      rotation: 180
+  - # Tile 167 (atlas 2, row 4, column 7)
+    - base: "grass/irregular/1"
+      rotation: 90
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: true
+    - base: "stone/lime/b"
+      rotation: 0
+  - # Tile 168 (atlas 2, row 5, column 0)
+    - base: "grass/irregular/8"
+      rotation: 0
+  - # Tile 169 (atlas 2, row 5, column 1)
+    - base: "grass/irregular/9"
+      rotation: 0
+  - # Tile 170 (atlas 2, row 5, column 2)
+    - base: "grass/common/c"
+      rotation: 270
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "grass/irregular/5"
+      rotation: 0
+  - # Tile 171 (atlas 2, row 5, column 3)
+    - base: "grass/common/e"
+      rotation: 180
+    - mask: "1/corner"
+      rotation: 0
+      inverted: false
+    - base: "grass/irregular/5"
+      rotation: 0
+  - # Tile 172 (atlas 2, row 5, column 4)
+    - base: "stone/lime/b"
+      rotation: 0
+    - mask: "1/corner"
+      rotation: 90
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 270
+  - # Tile 173 (atlas 2, row 5, column 5)
+    - base: "stone/lime/b"
+      rotation: 180
+    - mask: "1/corner"
+      rotation: 90
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 180
+  - # Tile 174 (atlas 2, row 5, column 6)
+    - base: "stone/lime/a"
+      rotation: 0
+    - mask: "1/corner"
+      rotation: 90
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 0
+  - # Tile 175 (atlas 2, row 5, column 7)
+    - base: "grass/irregular/9"
+      rotation: 90
+    - mask: "1/diagonal"
+      rotation: 180
+      inverted: true
+    - base: "stone/lime/a"
+      rotation: 270
+  - # Tile 176 (atlas 2, row 6, column 0)
+    - base: "ground/dry/a"
+      rotation: 270
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: true
+    - base: "stone/lime/a"
+      rotation: 90
+    - mask: "1/half"
+      rotation: 0
+      inverted: true
+    - base: "grass/common/e"
+      rotation: 0
+  - # Tile 177 (atlas 2, row 6, column 1)
+    - base: "grass/irregular/2"
+      rotation: 270
+    - mask: "1/diagonal"
+      rotation: 180
+      inverted: true
+    - base: "grass/common/a"
+      rotation: 180
+  - # Tile 178 (atlas 2, row 6, column 2)
+    - base: "grass/irregular/7"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/c"
+      rotation: 270
+  - # Tile 179 (atlas 2, row 6, column 3)
+    - base: "ground/dry/a"
+      rotation: 180
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: true
+    - base: "stone/lime/b"
+      rotation: 180
+    - mask: "1/diagonal"
+      rotation: 180
+      inverted: true
+    - base: "stone/lime/b"
+      rotation: 90
+  - # Tile 180 (atlas 2, row 6, column 4)
+    - base: "stone/lime/a"
+      rotation: 180
+    - mask: "1/half"
+      rotation: 180
+      inverted: false
+    - base: "grass/irregular/5"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/a"
+      rotation: 270
+  - # Tile 181 (atlas 2, row 6, column 5)
+    - base: "ground/water/a"
+      rotation: 270
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: true
+    - base: "stone/lime/a"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 180
+      inverted: true
+    - base: "stone/lime/a"
+      rotation: 90
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/d"
+      rotation: 90
+  - # Tile 182 (atlas 2, row 6, column 6)
+    - base: "ground/water/a"
+      rotation: 270
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: true
+    - base: "stone/lime/b"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 270
+      inverted: true
+    - base: "grass/common/c"
+      rotation: 270
+  - # Tile 183 (atlas 2, row 6, column 7)
+    - base: "grass/irregular/8"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 270
+      inverted: true
+    - base: "stone/lime/a"
+      rotation: 270
+    - mask: "1/half"
+      rotation: 0
+      inverted: true
+    - base: "grass/common/e"
+      rotation: 0
+  - # Tile 184 (atlas 2, row 7, column 0)
+    - base: "grass/irregular/4"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 270
+      inverted: true
+    - base: "stone/lime/a"
+      rotation: 90
+    - mask: "1/diagonal"
+      rotation: 180
+      inverted: true
+    - base: "grass/common/a"
+      rotation: 90
+  - # Tile 185 (atlas 2, row 7, column 1)
+    - base: "grass/irregular/9"
+      rotation: 90
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "stone/lime/b"
+      rotation: 90
+    - mask: "1/diagonal"
+      rotation: 270
+      inverted: true
+    - base: "stone/lime/a"
+      rotation: 270
+    - mask: "1/diagonal"
+      rotation: 180
+      inverted: true
+    - base: "grass/common/b"
+      rotation: 180
+  - # Tile 186 (atlas 2, row 7, column 2)
+    - base: "grass/irregular/9"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 270
+      inverted: true
+    - base: "stone/lime/a"
+      rotation: 0
+  - # Tile 187 (atlas 2, row 7, column 3)
+    - base: "stone/lime/b"
+      rotation: 90
+    - mask: "1/half"
+      rotation: 180
+      inverted: false
+    - base: "ground/water/a"
+      rotation: 90
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/c"
+      rotation: 270
+  - # Tile 188 (atlas 2, row 7, column 4)
+    - base: "grass/irregular/3"
+      rotation: 270
+    - mask: "1/diagonal"
+      rotation: 180
+      inverted: true
+    - base: "grass/common/b"
+      rotation: 0
+  - # Tile 189 (atlas 2, row 7, column 5)
+    - base: "grass/irregular/8"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "stone/lime/b"
+      rotation: 0
+    - mask: "1/half"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/b"
+      rotation: 180
+  - # Tile 190 (atlas 2, row 7, column 6)
+    - base: "grass/irregular/8"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/b"
+      rotation: 90
+  - # Tile 191 (atlas 2, row 7, column 7)
+    - base: "grass/dark/a"
+      rotation: 90
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/common/e"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 270
+      inverted: true
+    - base: "grass/common/a"
+      rotation: 180

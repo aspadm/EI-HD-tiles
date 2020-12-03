@@ -1,0 +1,12 @@
+# Разрешение тайлов и масок (48, 96 или 192 пикселя)
+tile_resolution: 192
+# Где расположены базовые материалы (тайлы)
+tiles_directory: "tiles"
+# Где расположены маски
+masks_directory: "masks"
+# Где расположены описания карт (для сборки модов)
+maps_directory: "maps"
+# Куда выводить результаты
+output_directory: "output"
+# Где расположены инструменты
+tools_directory: "tools"
