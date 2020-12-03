@@ -2,7 +2,8 @@
 python.org
 2. Install dependencies:
 pip install pyvips numpy pillow pyyaml pyinstaller
-3. Build exe files
+3. Download libvips and place dll files in "vips" dir
+4. Build exe files
 pyinstaller --console --add-data "vips;./" --onefile --clean .\gen_tileset.py
 pyinstaller --console --add-data "vips;./" --onefile --clean .\gen_mod.py
 pyinstaller --console --onefile --clean .\check_tile.py
