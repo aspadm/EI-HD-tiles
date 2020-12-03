@@ -76,6 +76,21 @@ def dds_read(file):
 
     return width, height, packing, data
 
+def convert_texture(img_name):
+    print("Converting {} from png to dds".format(img_name))
+    subprocess.check_call([
+        os.path.join(gen_tileset.TOOLS_DIR, "nvcompress.exe"),
+        "-color", "-nomips", "-bc1", "-silent",
+        os.path.join(OUT_DIR, img_name + ".png"),
+        os.path.join(OUT_DIR, img_name + ".dds"),
+    ])
+
+    print("Converting {} from dds to mmp".format(img_name))
+    with open(os.path.join(OUT_DIR, img_name + ".dds"), "rb") as f:
+        width, height, packing, data = dds_read(f)
+    with open(os.path.join(OUT_DIR, "textures_res", img_name + ".mmp"), "wb") as f:
+        f.write(construct_dxt1_mmp(width, height, packing, data))
+
 def sanitize_mod(mod_def):
     test_err(isinstance(mod_def, dict), "Incorrect common format")
     test_err(isinstance(mod_def["mod_name"], str), "Incorrect mod name")
@@ -112,28 +127,15 @@ def create_mod(mod_path):
     if not os.path.isdir(os.path.join(OUT_DIR, "textures_res")):
         os.makedirs(os.path.join(OUT_DIR, "textures_res"))
 
-    def convert_texture_task(img_count, img_name):
-        for i in range(img_count):
-            print("Converting {} to dds".format(img_name))
-            subprocess.check_call(os.path.join(gen_tileset.TOOLS_DIR, "nvcompress.exe") +
-                                  " -color -nomips -bc1 -silent " +
-                                  os.path.join(OUT_DIR, img_name + "{:03d}.png".format(i)) + " " +
-                                  os.path.join(OUT_DIR, img_name + "{:03d}.dds".format(i)),
-                                  shell=True)
-
-            print("Converting {} to mmp".format(img_name))
-            with open(os.path.join(OUT_DIR, img_name + "{:03d}.dds".format(i)), "rb") as f:
-                width, height, packing, data = dds_read(f)
-
-            with open(os.path.join(OUT_DIR, "textures_res", img_name + "{:03d}.mmp".format(i)), "wb") as f:
-                f.write(construct_dxt1_mmp(width, height, packing, data))
-
-    with ThreadPoolExecutor() as executor:
+    with ThreadPoolExecutor(max(2, os.cpu_count() // 2)) as executor:
+        print("Converting tilesets")
         futures = [executor.submit(convert_tileset, tileset) for tileset in mod_def["maps"]]
-        converted_tilesets = [future.result() for future in futures]
+        converted_tilesets = ["{}{:03d}".format(img_name, i)
+                              for img_count, img_name in (f.result() for f in futures)
+                              for i in range(img_count)]
 
-        futures = [executor.submit(convert_texture_task, img_count, img_name)
-                   for img_count, img_name in converted_tilesets]
+        print("Converting textures format")
+        futures = [executor.submit(convert_texture, img_name) for img_name in converted_tilesets]
         for future in futures:
             future.result()
 
@@ -191,4 +193,8 @@ if __name__ == "__main__":
     gen_tileset.OUT_DIR = temp_dir.name
     OUT_DIR = temp_dir.name
 
+    start_time = time.time()
     create_mod(sys.argv[1])
+    mins, secs = [int(x) for x in divmod(time.time() - start_time, 60)]
+    print("Mod has been successfully created in {} minutes and {} seconds".format(mins, secs))
+    exit(0)
