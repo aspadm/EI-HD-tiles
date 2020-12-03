@@ -1,0 +1,177 @@
+import sys
+import os
+import yaml
+import gen_tileset
+from gen_tileset import test_err, convert_tileset
+import datetime
+import subprocess
+import zipfile
+import tempfile
+import time
+
+def exit(n=0):
+    os.system("pause")
+    sys.exit(n)
+
+def construct_dxt1_mmp(width, height, packing, data):
+    mips = 1
+    # magic
+    res = bytes([0x4d, 0x4d, 0x50, 0x00])
+
+    res += width.to_bytes(4, "little")
+    res += height.to_bytes(4, "little")
+    res += mips.to_bytes(4, "little")
+
+    # FourCC
+    if packing == "DXT1":
+        res += bytes([0x44, 0x58, 0x54, 0x31])
+        bit_count = 4
+    else:
+        raise ValueError("Unknown texture compression")
+
+    res += bit_count.to_bytes(4, "little")
+    # padding
+    res += bytes([0] * 48)
+    # Offset
+    res += bytes([0x00, 0x00, 0x00, 0x00])
+    assert len(res) == 76
+
+    return res + data
+
+def dds_read(file):
+    magic = file.read(4)
+    assert magic == b"\x44\x44\x53\x20"
+
+    header_size = int.from_bytes(file.read(4), "little")
+    assert header_size == 124
+
+    _ = int.from_bytes(file.read(4), "little") # flags
+
+    height = int.from_bytes(file.read(4), "little")
+    width = int.from_bytes(file.read(4), "little")
+
+    file.seek(76)
+
+    header_size = int.from_bytes(file.read(4), "little")
+    assert header_size == 32
+
+    pix_flags = int.from_bytes(file.read(4), "little")
+
+    if pix_flags & 0x4:
+        packing = file.read(4).decode("ASCII")
+        assert packing == "DXT1"
+        data_size = height * width // 2
+    else:
+        raise ValueError("Unknown format")
+
+    file.seek(128)
+
+    print(file.name, packing, width, "x", height, data_size, "bytes")
+    data = file.read(data_size)
+    assert len(data) == data_size
+
+    return width, height, packing, data
+
+def sanitize_mod(mod_def):
+    test_err(isinstance(mod_def, dict), "Incorrect common format")
+    test_err(isinstance(mod_def["mod_name"], str), "Incorrect mod name")
+    test_err(len(mod_def["mod_name"]), "Empty mod name")
+    test_err(isinstance(mod_def["author"], str), "Incorrect author name")
+    test_err(isinstance(mod_def["version"], str), "Incorrect version string")
+    test_err(isinstance(mod_def["author_email"], str), "Incorrect author email")
+    test_err(isinstance(mod_def["author_url"], str), "Incorrect author URL")
+
+    test_err(isinstance(mod_def["maps"], list), "Incorrect maps format")
+    test_err(len(mod_def["maps"]), "No maps in mod")
+
+    for i, tileset in enumerate(mod_def["maps"]):
+        test_err(isinstance(tileset, str), "Incorrect map name")
+        mod_def["maps"][i] = os.path.join(gen_tileset.MAPS_DIR, tileset + ".yaml")
+
+    mod_def["date"] = datetime.datetime.today().strftime("%d.%m.%Y")
+
+def create_mod(mod_path):
+    with open(mod_path) as f:
+        try:
+            mod_def = yaml.safe_load(f)
+        except Exception as e:
+            print(e)
+            exit(2)
+
+    sanitize_mod(mod_def)
+
+    for tileset in mod_def["maps"]:
+        if not os.path.isfile(tileset):
+            print("File {:} not exist!".format(tileset))
+            exit(1)
+
+    if not os.path.isdir(os.path.join(OUT_DIR, "textures_res")):
+        os.makedirs(os.path.join(OUT_DIR, "textures_res"))
+    for tileset in mod_def["maps"]:
+        img_count, img_name = convert_tileset(tileset)
+
+        for i in range(img_count):
+            subprocess.call(os.path.join(gen_tileset.TOOLS_DIR, "nvcompress.exe") +
+                            " -color -nomips -bc1 " +
+                            os.path.join(OUT_DIR, img_name + "{:03d}.png".format(i)) + " " +
+                            os.path.join(OUT_DIR, img_name + "{:03d}.dds".format(i)),
+                            shell=True)
+            with open(os.path.join(OUT_DIR, img_name + "{:03d}.dds".format(i)), "rb") as f:
+                width, height, packing, data = dds_read(f)
+
+            with open(os.path.join(OUT_DIR, "textures_res", img_name + "{:03d}.mmp".format(i)), "wb") as f:
+                f.write(construct_dxt1_mmp(width, height, packing, data))
+
+    with open(os.path.join(OUT_DIR, "config.ini"), "w") as f:
+        f.write("""[MOD]
+Title={}
+Author={}
+AuthorEmail={}
+URL={}
+Date_DMY={}
+Version={}
+Single=1
+Multi=1
+GameSaves=0
+[RES]
+textures.res=textures.res""".format(
+    mod_def["mod_name"],
+    mod_def["author"],
+    mod_def["author_email"],
+    mod_def["author_url"],
+    mod_def["date"],
+    mod_def["version"]))
+
+    subprocess.call(os.path.join(gen_tileset.TOOLS_DIR, "eipacker.exe") +
+        " " + os.path.join(OUT_DIR, "config.ini"), shell=True)
+
+    subprocess.call(os.path.join(gen_tileset.TOOLS_DIR, "eipacker.exe") +
+        " " + os.path.join(OUT_DIR, "textures_res"), shell=True)
+
+    time.sleep(1) # Fix error with zipfile
+
+    with zipfile.ZipFile(os.path.join(MOD_OUT_DIR, mod_def["mod_name"] + ".zip"), "w") as z:
+        z.write(os.path.join(OUT_DIR, "config.reg"), arcname=os.path.join(mod_def["mod_name"], "config.reg"))
+        z.write(os.path.join(OUT_DIR, "textures.res"), arcname=os.path.join(mod_def["mod_name"], "textures.res"))
+
+if __name__ == "__main__":
+    os.chdir(os.path.dirname(sys.argv[0]))
+    if len(sys.argv) != 2:
+        print("Usage: {} <mod.yaml>".format(sys.argv[0]))
+        exit(1)
+
+    gen_tileset.read_config()
+
+    MOD_OUT_DIR = gen_tileset.OUT_DIR
+
+    if not os.path.isfile(sys.argv[1]):
+        print("File {:} not exist!".format(sys.argv[1]))
+        exit(1)
+
+    temp_dir = tempfile.TemporaryDirectory()
+    print("Temp dir:", temp_dir.name)
+
+    gen_tileset.OUT_DIR = temp_dir.name
+    OUT_DIR = temp_dir.name
+
+    create_mod(sys.argv[1])
