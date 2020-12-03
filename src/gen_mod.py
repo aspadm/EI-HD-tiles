@@ -121,7 +121,7 @@ def create_mod(mod_path):
                                   os.path.join(OUT_DIR, img_name + "{:03d}.dds".format(i)),
                                   shell=True)
 
-            print("Converting {} to dds".format(img_name))
+            print("Converting {} to mmp".format(img_name))
             with open(os.path.join(OUT_DIR, img_name + "{:03d}.dds".format(i)), "rb") as f:
                 width, height, packing, data = dds_read(f)
 
