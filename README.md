@@ -18,8 +18,8 @@ Tools for generating tile atlases for the game Evil Islands: Curse of the Lost S
 
 1. eipacker: Demoth;
 2. ini2reg: Nival;
-3. [nvcompress](github.com/castano/nvidia-texture-tools): Ignacio Castaño, NVIDIA Corporation (MIT license);
-4. [libvips](github.com/libvips/libvips): [John Cupitt and others](https://github.com/libvips/libvips/blob/master/AUTHORS) (LGPL 2.1+).
+3. [nvcompress](https://github.com/castano/nvidia-texture-tools): Ignacio Castaño, NVIDIA Corporation (MIT license);
+4. [libvips](https://github.com/libvips/libvips): [John Cupitt and others](https://github.com/libvips/libvips/blob/master/AUTHORS) (LGPL 2.1+).
 
 Вы можете [получить исходные тексты программ](src).
 
