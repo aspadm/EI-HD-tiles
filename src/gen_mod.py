@@ -6,6 +6,7 @@ import subprocess
 import zipfile
 import tempfile
 import time
+from concurrent.futures import ThreadPoolExecutor
 
 # Add scripts dir to python search path
 sys.path.append(os.path.dirname(os.path.abspath(sys.argv[0])))
@@ -110,20 +111,31 @@ def create_mod(mod_path):
 
     if not os.path.isdir(os.path.join(OUT_DIR, "textures_res")):
         os.makedirs(os.path.join(OUT_DIR, "textures_res"))
-    for tileset in mod_def["maps"]:
-        img_count, img_name = convert_tileset(tileset)
 
+    def convert_texture_task(img_count, img_name):
         for i in range(img_count):
-            subprocess.call(os.path.join(gen_tileset.TOOLS_DIR, "nvcompress.exe") +
-                            " -color -nomips -bc1 " +
-                            os.path.join(OUT_DIR, img_name + "{:03d}.png".format(i)) + " " +
-                            os.path.join(OUT_DIR, img_name + "{:03d}.dds".format(i)),
-                            shell=True)
+            print("Converting {} to dds".format(img_name))
+            subprocess.check_call(os.path.join(gen_tileset.TOOLS_DIR, "nvcompress.exe") +
+                                  " -color -nomips -bc1 -silent " +
+                                  os.path.join(OUT_DIR, img_name + "{:03d}.png".format(i)) + " " +
+                                  os.path.join(OUT_DIR, img_name + "{:03d}.dds".format(i)),
+                                  shell=True)
+
+            print("Converting {} to dds".format(img_name))
             with open(os.path.join(OUT_DIR, img_name + "{:03d}.dds".format(i)), "rb") as f:
                 width, height, packing, data = dds_read(f)
 
             with open(os.path.join(OUT_DIR, "textures_res", img_name + "{:03d}.mmp".format(i)), "wb") as f:
                 f.write(construct_dxt1_mmp(width, height, packing, data))
+
+    with ThreadPoolExecutor() as executor:
+        futures = [executor.submit(convert_tileset, tileset) for tileset in mod_def["maps"]]
+        converted_tilesets = [future.result() for future in futures]
+
+        futures = [executor.submit(convert_texture_task, img_count, img_name)
+                   for img_count, img_name in converted_tilesets]
+        for future in futures:
+            future.result()
 
     with open(os.path.join(OUT_DIR, "config.ini"), "w") as f:
         f.write("""[MOD]
