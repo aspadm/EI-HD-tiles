@@ -17,8 +17,7 @@ def exit(n=0):
     os.system("pause")
     sys.exit(n)
 
-def construct_dxt1_mmp(width, height, packing, data):
-    mips = 1
+def construct_dxt1_mmp(width, height, packing, mips, data):
     # magic
     res = bytes([0x4d, 0x4d, 0x50, 0x00])
 
@@ -54,6 +53,14 @@ def dds_read(file):
     height = int.from_bytes(file.read(4), "little")
     width = int.from_bytes(file.read(4), "little")
 
+    assert height == width
+
+    _ = file.read(8)
+
+    mips = int.from_bytes(file.read(4), "little")
+
+    assert 2 ** (mips - 1) == width
+
     file.seek(76)
 
     header_size = int.from_bytes(file.read(4), "little")
@@ -64,7 +71,7 @@ def dds_read(file):
     if pix_flags & 0x4:
         packing = file.read(4).decode("ASCII")
         assert packing == "DXT1"
-        data_size = height * width // 2
+        data_size = sum([((((2 ** i) ** 2 - 1) // 16 + 1) * 16) // 2 for i in range(mips)])
     else:
         raise ValueError("Unknown format")
 
@@ -72,24 +79,24 @@ def dds_read(file):
 
     print(file.name, packing, width, "x", height, data_size, "bytes")
     data = file.read(data_size)
-    assert len(data) == data_size
+    assert len(data) == data_size, "expected: {}, real: {}".format(data_size, len(data))
 
-    return width, height, packing, data
+    return width, height, packing, mips, data
 
 def convert_texture(img_name):
     print("Converting {} from png to dds".format(img_name))
     subprocess.check_call([
         os.path.join(gen_tileset.TOOLS_DIR, "nvcompress.exe"),
-        "-color", "-nomips", "-bc1", "-silent",
+        "-color", "-bc1", "-silent",
         os.path.join(OUT_DIR, img_name + ".png"),
         os.path.join(OUT_DIR, img_name + ".dds"),
     ])
 
     print("Converting {} from dds to mmp".format(img_name))
     with open(os.path.join(OUT_DIR, img_name + ".dds"), "rb") as f:
-        width, height, packing, data = dds_read(f)
+        width, height, packing, mips, data = dds_read(f)
     with open(os.path.join(OUT_DIR, "textures_res", img_name + ".mmp"), "wb") as f:
-        f.write(construct_dxt1_mmp(width, height, packing, data))
+        f.write(construct_dxt1_mmp(width, height, packing, mips, data))
 
 def sanitize_mod(mod_def):
     test_err(isinstance(mod_def, dict), "Incorrect common format")
