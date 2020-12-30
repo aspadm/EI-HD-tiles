@@ -18,6 +18,8 @@ def test_err(test_expr, err_str):
         exit(3)
 
 def vs2np_uchar(img):
+    if img.hasalpha():
+        img = img[:,:,:3]
     assert img.format == "uchar", "Got {}, not uchar".format(img.type)
     return np.ndarray(buffer=img.write_to_memory(),
         dtype=np.uint8,
@@ -69,6 +71,8 @@ def mix_tile(tile) -> ps.Image:
         # bottom base (base 1)
         b1 = ps.Image.new_from_file(tile[0]["base"],
                                     memory=True).rot(tile[0]["rotation"])
+        if b1.hasalpha():
+            b1 = b1[:,:,:3]
         test_err(b1.height == b1.width == COMMON_RES,
                  "Incorrect resolution in {}".format(tile[0]["base"]))
         return b1
