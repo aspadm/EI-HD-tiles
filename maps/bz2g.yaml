@@ -14,7 +14,7 @@ tiles:
       rotation: 0
   - # Tile 4 (atlas 0, row 0, column 4)
     - base: "grass/common/d"
-      rotation: 0
+      rotation: 180
     - mask: "1/half"
       rotation: 0
       inverted: false
@@ -127,7 +127,7 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/greenish/b"
       rotation: 180
     - mask: "1/diagonal"
       rotation: 180
@@ -140,7 +140,7 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/greenish/b"
       rotation: 270
   - # Tile 19 (atlas 0, row 2, column 3)
     - base: "grass/common/d"
@@ -148,7 +148,7 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/greenish/b"
       rotation: 90
     - mask: "1/diagonal"
       rotation: 0
@@ -156,7 +156,7 @@ tiles:
     - base: "grass/common/d"
       rotation: 0
   - # Tile 20 (atlas 0, row 2, column 4)
-    - base: "grass/fresh/a"
+    - base: "grass/bloom/a"
       rotation: 0
     - mask: "1/half"
       rotation: 180
@@ -164,7 +164,7 @@ tiles:
     - base: "grass/common/d"
       rotation: 0
   - # Tile 21 (atlas 0, row 2, column 5)
-    - base: "grass/fresh/a"
+    - base: "grass/bloom/a"
       rotation: 270
     - mask: "1/half"
       rotation: 180
@@ -172,7 +172,7 @@ tiles:
     - base: "grass/common/e"
       rotation: 90
   - # Tile 22 (atlas 0, row 2, column 6)
-    - base: "grass/fresh/a"
+    - base: "grass/bloom/a"
       rotation: 180
     - mask: "1/half"
       rotation: 180
@@ -207,10 +207,10 @@ tiles:
     - base: "grass/faded/a"
       rotation: 0
   - # Tile 27 (atlas 0, row 3, column 3)
-    - base: "grass/fresh/a"
+    - base: "grass/bloom/a"
       rotation: 0
   - # Tile 28 (atlas 0, row 3, column 4)
-    - base: "grass/fresh/a"
+    - base: "grass/bloom/a"
       rotation: 0
   - # Tile 29 (atlas 0, row 3, column 5)
     - base: "grass/common/e"
@@ -218,7 +218,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/lime/a"
       rotation: 90
   - # Tile 30 (atlas 0, row 3, column 6)
     - base: "grass/common/e"
@@ -226,7 +226,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/lime/a"
       rotation: 90
   - # Tile 31 (atlas 0, row 3, column 7)
     - base: "grass/common/e"
@@ -234,7 +234,7 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 90
   - # Tile 32 (atlas 0, row 4, column 0)
     - base: "grass/common/d"
@@ -242,7 +242,7 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 90
   - # Tile 33 (atlas 0, row 4, column 1)
     - base: "grass/common/d"
@@ -250,7 +250,7 @@ tiles:
     - mask: "1/diagonal"
       rotation: 0
       inverted: true
-    - base: "grass/fresh/a"
+    - base: "grass/bloom/a"
       rotation: 270
   - # Tile 34 (atlas 0, row 4, column 2)
     - base: "grass/common/d"
@@ -258,7 +258,7 @@ tiles:
     - mask: "1/diagonal"
       rotation: 0
       inverted: true
-    - base: "grass/fresh/a"
+    - base: "grass/bloom/a"
       rotation: 180
   - # Tile 35 (atlas 0, row 4, column 3)
     - base: "grass/common/e"
@@ -266,7 +266,7 @@ tiles:
     - mask: "1/diagonal"
       rotation: 0
       inverted: true
-    - base: "grass/fresh/a"
+    - base: "grass/bloom/a"
       rotation: 180
   - # Tile 36 (atlas 0, row 4, column 4)
     - base: "grass/common/d"
@@ -322,7 +322,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 180
   - # Tile 43 (atlas 0, row 5, column 3)
     - base: "grass/common/e"
@@ -330,7 +330,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 90
   - # Tile 44 (atlas 0, row 5, column 4)
     - base: "grass/common/d"
@@ -338,7 +338,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 0
   - # Tile 45 (atlas 0, row 5, column 5)
     - base: "grass/common/d"
@@ -381,10 +381,10 @@ tiles:
     - base: "grass/common/e"
       rotation: 90
   - # Tile 50 (atlas 0, row 6, column 2)
-    - base: "grass/fresh/a"
+    - base: "grass/bloom/a"
       rotation: 270
   - # Tile 51 (atlas 0, row 6, column 3)
-    - base: "grass/fresh/a"
+    - base: "grass/bloom/a"
       rotation: 90
   - # Tile 52 (atlas 0, row 6, column 4)
     - base: "grass/common/d"
@@ -392,7 +392,7 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/greenish/a"
       rotation: 90
   - # Tile 53 (atlas 0, row 6, column 5)
     - base: "grass/common/e"
@@ -400,7 +400,7 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/greenish/a"
       rotation: 0
   - # Tile 54 (atlas 0, row 6, column 6)
     - base: "grass/common/e"
@@ -408,7 +408,7 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "grass/irregular/9"
+    - base: "stone/greenish/b"
       rotation: 90
   - # Tile 55 (atlas 0, row 6, column 7)
     - base: "grass/common/d"
@@ -416,7 +416,7 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 180
   - # Tile 56 (atlas 0, row 7, column 0)
     - base: "grass/common/e"
@@ -424,7 +424,7 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 270
   - # Tile 57 (atlas 0, row 7, column 1)
     - base: "grass/common/e"
@@ -432,7 +432,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/gray/a"
+    - base: "stone/pink/a"
       rotation: 180
   - # Tile 58 (atlas 0, row 7, column 2)
     - base: "grass/common/e"
@@ -440,7 +440,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/gray/a"
+    - base: "stone/pink/a"
       rotation: 270
   - # Tile 59 (atlas 0, row 7, column 3)
     - base: "stone/lime/b"
@@ -472,10 +472,10 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "ground/gravel/b"
+    - base: "stone/lime/a"
       rotation: 0
   - # Tile 63 (atlas 0, row 7, column 7)
-    - base: "stone/grayish/b"
+    - base: "stone/lime/b"
       rotation: 270
     - mask: "1/diagonal"
       rotation: 90
@@ -601,7 +601,7 @@ tiles:
     - mask: "1/half"
       rotation: 90
       inverted: false
-    - base: "ground/gravel/a"
+    - base: "stone/lime/a"
       rotation: 0
   - # Tile 81 (atlas 1, row 2, column 1)
     - base: "grass/common/e"
@@ -699,7 +699,7 @@ tiles:
     - mask: "1/diagonal"
       rotation: 0
       inverted: true
-    - base: "grass/fresh/a"
+    - base: "grass/bloom/a"
       rotation: 270
   - # Tile 92 (atlas 1, row 3, column 4)
     - base: "grass/fresh/a"
@@ -707,10 +707,10 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/greenish/a"
+    - base: "stone/pink/a"
       rotation: 270
   - # Tile 93 (atlas 1, row 3, column 5)
-    - base: "stone/gray/a"
+    - base: "stone/pink/a"
       rotation: 90
     - mask: "1/diagonal"
       rotation: 90
@@ -734,7 +734,7 @@ tiles:
     - base: "grass/faded/a"
       rotation: 90
   - # Tile 96 (atlas 1, row 4, column 0)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 270
     - mask: "1/diagonal"
       rotation: 90
@@ -747,7 +747,7 @@ tiles:
     - base: "grass/common/e"
       rotation: 0
   - # Tile 97 (atlas 1, row 4, column 1)
-    - base: "grass/fresh/a"
+    - base: "grass/bloom/a"
       rotation: 270
     - mask: "1/half"
       rotation: 180
@@ -755,10 +755,15 @@ tiles:
     - base: "grass/dark/a"
       rotation: 180
   - # Tile 98 (atlas 1, row 4, column 2)
-    - base: "grass/common/e"
+    - base: "grass/dark/a"
       rotation: 0
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: true
+    - base: "grass/bloom/b"
+      rotation: 90
   - # Tile 99 (atlas 1, row 4, column 3)
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 0
     - mask: "1/diagonal"
       rotation: 90
@@ -766,7 +771,7 @@ tiles:
     - base: "grass/common/d"
       rotation: 0
   - # Tile 100 (atlas 1, row 4, column 4)
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 90
     - mask: "1/diagonal"
       rotation: 90
@@ -782,7 +787,7 @@ tiles:
     - base: "stone/lime/b"
       rotation: 0
   - # Tile 102 (atlas 1, row 4, column 6)
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 0
     - mask: "1/diagonal"
       rotation: 90
@@ -795,7 +800,7 @@ tiles:
     - base: "grass/common/b"
       rotation: 180
   - # Tile 103 (atlas 1, row 4, column 7)
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 0
     - mask: "1/diagonal"
       rotation: 90
@@ -813,7 +818,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/lime/a"
+    - base: "stone/pink/a"
       rotation: 0
   - # Tile 105 (atlas 1, row 5, column 1)
     - base: "grass/faded/a"
@@ -842,7 +847,7 @@ tiles:
     - base: "grass/dark/a"
       rotation: 0
   - # Tile 107 (atlas 1, row 5, column 3)
-    - base: "stone/greenish/a"
+    - base: "stone/lime/a"
       rotation: 0
     - mask: "1/diagonal"
       rotation: 180
@@ -860,7 +865,7 @@ tiles:
     - base: "grass/common/b"
       rotation: 270
   - # Tile 108 (atlas 1, row 5, column 4)
-    - base: "stone/greenish/b"
+    - base: "stone/pink/b"
       rotation: 270
     - mask: "1/diagonal"
       rotation: 90
@@ -868,7 +873,7 @@ tiles:
     - base: "grass/common/d"
       rotation: 90
   - # Tile 109 (atlas 1, row 5, column 5)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 90
     - mask: "1/diagonal"
       rotation: 90
@@ -884,7 +889,7 @@ tiles:
     - base: "ground/dark/a"
       rotation: 270
   - # Tile 111 (atlas 1, row 5, column 7)
-    - base: "stone/gray/b"
+    - base: "stone/pink/b"
       rotation: 270
     - mask: "1/diagonal"
       rotation: 90
@@ -902,7 +907,7 @@ tiles:
     - mask: "1/half"
       rotation: 90
       inverted: false
-    - base: "stone/greenish/b"
+    - base: "stone/pink/b"
       rotation: 270
   - # Tile 113 (atlas 1, row 6, column 1)
     - base: "stone/lime/a"
@@ -911,8 +916,13 @@ tiles:
     - base: "stone/lime/b"
       rotation: 0
   - # Tile 115 (atlas 1, row 6, column 3)
-    - base: "grass/common/e"
-      rotation: 270
+    - base: "grass/dark/a"
+      rotation: 0
+    - mask: "1/diagonal"
+      rotation: 0
+      inverted: true
+    - base: "grass/bloom/a"
+      rotation: 90
   - # Tile 116 (atlas 1, row 6, column 4)
     - base: "stone/lime/b"
       rotation: 90
@@ -974,7 +984,7 @@ tiles:
     - base: "stone/greenish/b"
       rotation: 270
   - # Tile 121 (atlas 1, row 7, column 1)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 180
     - mask: "1/diagonal"
       rotation: 180
@@ -1046,7 +1056,7 @@ tiles:
     - base: "grass/dark/a"
       rotation: 90
   - # Tile 130 (atlas 2, row 0, column 2)
-    - base: "grass/fresh/a"
+    - base: "grass/bloom/a"
       rotation: 90
     - mask: "1/half"
       rotation: 0
@@ -1054,7 +1064,7 @@ tiles:
     - base: "stone/greenish/b"
       rotation: 0
   - # Tile 131 (atlas 2, row 0, column 3)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 270
     - mask: "1/diagonal"
       rotation: 270
@@ -1080,7 +1090,7 @@ tiles:
     - base: "grass/faded/a"
       rotation: 90
   - # Tile 133 (atlas 2, row 0, column 5)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 270
     - mask: "1/diagonal"
       rotation: 90
@@ -1114,7 +1124,7 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 0
   - # Tile 137 (atlas 2, row 1, column 1)
     - base: "grass/winter_normal/a"
@@ -1264,7 +1274,7 @@ tiles:
     - mask: "1/diagonal"
       rotation: 0
       inverted: true
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 90
     - mask: "1/diagonal"
       rotation: 90
@@ -1293,7 +1303,7 @@ tiles:
     - base: "grass/common/e"
       rotation: 180
   - # Tile 154 (atlas 2, row 3, column 2)
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 0
     - mask: "1/diagonal"
       rotation: 90
@@ -1363,7 +1373,7 @@ tiles:
     - mask: "1/half"
       rotation: 90
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 90
   - # Tile 160 (atlas 2, row 4, column 0)
     - base: "stone/lime/a"
@@ -1408,7 +1418,7 @@ tiles:
     - base: "grass/common/a"
       rotation: 90
   - # Tile 164 (atlas 2, row 4, column 4)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 0
   - # Tile 165 (atlas 2, row 4, column 5)
     - base: "ground/brown/a"
@@ -1449,7 +1459,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 90
   - # Tile 172 (atlas 2, row 5, column 4)
     - base: "grass/winter_normal/a"
@@ -1486,7 +1496,7 @@ tiles:
     - base: "grass/fresh/a"
       rotation: 90
   - # Tile 175 (atlas 2, row 5, column 7)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 180
     - mask: "1/diagonal"
       rotation: 90
@@ -1543,7 +1553,7 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 90
   - # Tile 180 (atlas 2, row 6, column 4)
     - base: "grass/burnt/a"
@@ -1551,7 +1561,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 270
   - # Tile 181 (atlas 2, row 6, column 5)
     - base: "grass/dark/a"
@@ -1559,7 +1569,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 180
   - # Tile 182 (atlas 2, row 6, column 6)
     - base: "stone/lime/a"
@@ -1583,7 +1593,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 0
     - mask: "1/diagonal"
       rotation: 270
@@ -1604,7 +1614,7 @@ tiles:
     - base: "grass/faded/a"
       rotation: 180
   - # Tile 186 (atlas 2, row 7, column 2)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 270
     - mask: "1/diagonal"
       rotation: 90
@@ -1667,7 +1677,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 90
     - mask: "1/diagonal"
       rotation: 270
@@ -1721,7 +1731,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 180
   - # Tile 201 (atlas 3, row 1, column 1)
     - base: "ground/dark/a"
@@ -1750,7 +1760,7 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 0
   - # Tile 204 (atlas 3, row 1, column 4)
     - base: "grass/faded/a"
@@ -1828,7 +1838,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 180
     - mask: "1/diagonal"
       rotation: 270
@@ -1896,7 +1906,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 180
     - mask: "1/diagonal"
       rotation: 270
@@ -1977,7 +1987,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 0
   - # Tile 228 (atlas 3, row 4, column 4)
     - base: "grass/dark/a"
@@ -2001,7 +2011,7 @@ tiles:
     - base: "grass/faded/a"
       rotation: 0
   - # Tile 230 (atlas 3, row 4, column 6)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 270
     - mask: "1/diagonal"
       rotation: 90
@@ -2019,7 +2029,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 270
   - # Tile 232 (atlas 3, row 5, column 0)
     - base: "stone/lime/a"
@@ -2147,7 +2157,7 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 180
   - # Tile 243 (atlas 3, row 6, column 3)
     - base: "ground/gravel/a"
@@ -2244,12 +2254,12 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 270
     - mask: "1/corner"
       rotation: 270
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 0
   - # Tile 252 (atlas 3, row 7, column 4)
     - base: "grass/fresh/a"
@@ -2421,7 +2431,7 @@ tiles:
     - base: "grass/fresh/a"
       rotation: 90
   - # Tile 265 (atlas 4, row 1, column 1)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 90
     - mask: "1/corner"
       rotation: 0
@@ -2482,7 +2492,7 @@ tiles:
     - base: "grass/common/d"
       rotation: 90
   - # Tile 272 (atlas 4, row 2, column 0)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 270
     - mask: "1/diagonal"
       rotation: 90
@@ -2537,7 +2547,7 @@ tiles:
     - base: "grass/burnt/a"
       rotation: 0
   - # Tile 277 (atlas 4, row 2, column 5)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 180
     - mask: "1/diagonal"
       rotation: 90
@@ -2587,7 +2597,7 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 270
   - # Tile 283 (atlas 4, row 3, column 3)
     - base: "grass/fresh/a"
@@ -2606,7 +2616,7 @@ tiles:
     - base: "grass/faded/a"
       rotation: 90
   - # Tile 285 (atlas 4, row 3, column 5)
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 0
     - mask: "1/corner"
       rotation: 0
@@ -2616,7 +2626,7 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 0
   - # Tile 286 (atlas 4, row 3, column 6)
     - base: "grass/fresh/a"
@@ -2671,7 +2681,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 180
     - mask: "1/diagonal"
       rotation: 270
@@ -2780,7 +2790,7 @@ tiles:
     - mask: "1/half"
       rotation: 90
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 270
     - mask: "1/diagonal"
       rotation: 90
@@ -2809,7 +2819,7 @@ tiles:
     - mask: "1/diagonal"
       rotation: 0
       inverted: true
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 270
     - mask: "1/half"
       rotation: 90
@@ -2872,7 +2882,7 @@ tiles:
     - base: "grass/fresh/a"
       rotation: 0
   - # Tile 307 (atlas 4, row 6, column 3)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 0
     - mask: "1/diagonal"
       rotation: 270
@@ -2890,7 +2900,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 90
   - # Tile 309 (atlas 4, row 6, column 5)
     - base: "grass/faded/a"
@@ -2914,7 +2924,7 @@ tiles:
     - base: "grass/common/d"
       rotation: 180
   - # Tile 311 (atlas 4, row 6, column 7)
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 180
     - mask: "1/corner"
       rotation: 90
@@ -2984,7 +2994,7 @@ tiles:
     - mask: "1/corner"
       rotation: 90
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 0
   - # Tile 317 (atlas 4, row 7, column 5)
     - base: "ground/brown/a"
@@ -3076,7 +3086,7 @@ tiles:
     - base: "stone/lime/b"
       rotation: 180
   - # Tile 325 (atlas 5, row 0, column 5)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 0
     - mask: "1/diagonal"
       rotation: 90
@@ -3107,7 +3117,7 @@ tiles:
     - base: "grass/common/d"
       rotation: 0
   - # Tile 327 (atlas 5, row 0, column 7)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 90
     - mask: "1/diagonal"
       rotation: 90
@@ -3120,12 +3130,12 @@ tiles:
     - mask: "1/diagonal"
       rotation: 90
       inverted: true
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 0
     - mask: "1/diagonal"
       rotation: 0
       inverted: true
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 90
     - mask: "1/diagonal"
       rotation: 270
@@ -3151,7 +3161,7 @@ tiles:
     - base: "grass/fresh/a"
       rotation: 0
   - # Tile 330 (atlas 5, row 1, column 2)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 270
     - mask: "1/diagonal"
       rotation: 180
@@ -3196,7 +3206,7 @@ tiles:
     - base: "grass/common/c"
       rotation: 0
   - # Tile 335 (atlas 5, row 1, column 7)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 90
     - mask: "1/diagonal"
       rotation: 270
@@ -3222,7 +3232,7 @@ tiles:
     - base: "grass/common/d"
       rotation: 90
   - # Tile 337 (atlas 5, row 2, column 1)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 90
     - mask: "1/diagonal"
       rotation: 90
@@ -3243,12 +3253,12 @@ tiles:
     - base: "grass/common/e"
       rotation: 90
   - # Tile 339 (atlas 5, row 2, column 3)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 90
     - mask: "1/half"
       rotation: 180
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 90
   - # Tile 340 (atlas 5, row 2, column 4)
     - base: "stone/gray/a"
@@ -3389,7 +3399,7 @@ tiles:
     - mask: "4/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 90
     - mask: "1/diagonal"
       rotation: 270
@@ -3410,7 +3420,7 @@ tiles:
     - base: "grass/fresh/a"
       rotation: 180
   - # Tile 353 (atlas 5, row 4, column 1)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 180
     - mask: "1/diagonal"
       rotation: 90
@@ -3548,7 +3558,7 @@ tiles:
     - mask: "4/diagonal"
       rotation: 0
       inverted: true
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 180
     - mask: "1/diagonal"
       rotation: 90
@@ -3561,7 +3571,7 @@ tiles:
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 270
   - # Tile 366 (atlas 5, row 5, column 6)
     - base: "stone/lime/a"
@@ -3603,7 +3613,7 @@ tiles:
     - mask: "4/diagonal"
       rotation: 0
       inverted: true
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 90
   - # Tile 370 (atlas 5, row 6, column 2)
     - base: "grass/winter_normal/a"
@@ -3721,7 +3731,7 @@ tiles:
     - base: "grass/fresh/a"
       rotation: 180
   - # Tile 380 (atlas 5, row 7, column 4)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 90
     - mask: "1/diagonal"
       rotation: 180
@@ -3747,12 +3757,12 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 270
     - mask: "4/diagonal"
       rotation: 0
       inverted: true
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 270
   - # Tile 383 (atlas 5, row 7, column 7)
     - base: "grass/fresh/a"
@@ -3781,7 +3791,7 @@ tiles:
     - mask: "4/diagonal"
       rotation: 0
       inverted: true
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 90
   - # Tile 386 (atlas 6, row 0, column 2)
     - base: "grass/faded/a"
@@ -3794,7 +3804,7 @@ tiles:
     - mask: "4/diagonal"
       rotation: 180
       inverted: true
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 90
   - # Tile 387 (atlas 6, row 0, column 3)
     - base: "grass/faded/a"
@@ -3852,7 +3862,7 @@ tiles:
     - base: "stone/lime/b"
       rotation: 0
   - # Tile 392 (atlas 6, row 1, column 0)
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 0
     - mask: "1/half"
       rotation: 180
@@ -3889,7 +3899,7 @@ tiles:
     - base: "grass/winter_normal/a"
       rotation: 180
   - # Tile 396 (atlas 6, row 1, column 4)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 270
     - mask: "1/diagonal"
       rotation: 90
@@ -3936,7 +3946,7 @@ tiles:
     - base: "grass/dark/a"
       rotation: 180
   - # Tile 400 (atlas 6, row 2, column 0)
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 90
     - mask: "1/diagonal"
       rotation: 90
@@ -3944,12 +3954,12 @@ tiles:
     - base: "grass/dark/a"
       rotation: 270
   - # Tile 401 (atlas 6, row 2, column 1)
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 0
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 270
   - # Tile 402 (atlas 6, row 2, column 2)
     - base: "stone/lime/b"
@@ -4261,7 +4271,7 @@ tiles:
     - mask: "1/half"
       rotation: 90
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 90
     - mask: "1/diagonal"
       rotation: 90
@@ -4491,7 +4501,7 @@ tiles:
     - mask: "1/half"
       rotation: 90
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 90
     - mask: "1/diagonal"
       rotation: 90
@@ -4509,7 +4519,7 @@ tiles:
     - mask: "1/corner"
       rotation: 90
       inverted: false
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 180
   - # Tile 452 (atlas 7, row 0, column 4)
     - base: "grass/irregular/5"
@@ -4543,7 +4553,7 @@ tiles:
     - mask: "1/diagonal"
       rotation: 90
       inverted: true
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 0
   - # Tile 455 (atlas 7, row 0, column 7)
     - base: "stone/lime/b"
@@ -4559,7 +4569,7 @@ tiles:
     - base: "grass/common/e"
       rotation: 0
   - # Tile 456 (atlas 7, row 1, column 0)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 180
     - mask: "1/diagonal"
       rotation: 270
@@ -4650,7 +4660,7 @@ tiles:
     - base: "grass/common/e"
       rotation: 0
   - # Tile 463 (atlas 7, row 1, column 7)
-    - base: "stone/grayish/a"
+    - base: "stone/pink/a"
       rotation: 270
     - mask: "1/diagonal"
       rotation: 180
@@ -4741,7 +4751,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 0
     - mask: "1/diagonal"
       rotation: 270
@@ -4749,7 +4759,7 @@ tiles:
     - base: "grass/fresh/a"
       rotation: 270
   - # Tile 471 (atlas 7, row 2, column 7)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 180
     - mask: "1/diagonal"
       rotation: 90
@@ -4802,7 +4812,7 @@ tiles:
     - base: "grass/faded/a"
       rotation: 90
   - # Tile 477 (atlas 7, row 3, column 5)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 270
     - mask: "1/diagonal"
       rotation: 90
@@ -4976,7 +4986,7 @@ tiles:
     - base: "grass/burnt/a"
       rotation: 180
   - # Tile 495 (atlas 7, row 5, column 7)
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 270
     - mask: "1/diagonal"
       rotation: 90
@@ -5005,7 +5015,7 @@ tiles:
     - mask: "1/half"
       rotation: 0
       inverted: false
-    - base: "stone/grayish/b"
+    - base: "stone/pink/b"
       rotation: 180
   - # Tile 499 (atlas 7, row 6, column 3)
     - base: "ground/brown/a"

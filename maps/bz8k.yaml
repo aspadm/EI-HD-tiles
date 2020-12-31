@@ -224,6 +224,11 @@ tiles:
   - # Tile 37 (atlas 0, row 4, column 5)
     - base: "snow/dark/b"
       rotation: 180
+    - mask: "1/corner"
+      rotation: 90
+      inverted: false
+    - base: "snow/common/1"
+      rotation: 90
   - # Tile 38 (atlas 0, row 4, column 6)
     - base: "snow/dark/b"
       rotation: 270
@@ -243,6 +248,11 @@ tiles:
   - # Tile 40 (atlas 0, row 5, column 0)
     - base: "snow/dark/b"
       rotation: 180
+    - mask: "1/corner"
+      rotation: 90
+      inverted: false
+    - base: "snow/common/1"
+      rotation: 270
   - # Tile 41 (atlas 0, row 5, column 1)
     - base: "snow/dark/b"
       rotation: 0
@@ -262,6 +272,11 @@ tiles:
   - # Tile 43 (atlas 0, row 5, column 3)
     - base: "snow/dark/b"
       rotation: 180
+    - mask: "1/corner"
+      rotation: 90
+      inverted: false
+    - base: "snow/common/1"
+      rotation: 90
   - # Tile 44 (atlas 0, row 5, column 4)
     - base: "snow/dark/b"
       rotation: 270
@@ -273,6 +288,11 @@ tiles:
   - # Tile 45 (atlas 0, row 5, column 5)
     - base: "snow/dark/b"
       rotation: 180
+    - mask: "1/corner"
+      rotation: 90
+      inverted: false
+    - base: "snow/common/1"
+      rotation: 270
   - # Tile 46 (atlas 0, row 5, column 6)
     - base: "snow/dark/b"
       rotation: 90
@@ -790,10 +810,10 @@ tiles:
     - base: "stone/gray/b"
       rotation: 90
   - # Tile 148 (atlas 2, row 2, column 4)
-    - base: "sand/dark/a"
+    - base: "grass/straw/a"
       rotation: 0
   - # Tile 149 (atlas 2, row 2, column 5)
-    - base: "sand/dark/a"
+    - base: "grass/straw/a"
       rotation: 180
   - # Tile 150 (atlas 2, row 2, column 6)
     - base: "snow/common/7"
@@ -1854,6 +1874,11 @@ tiles:
   - # Tile 247 (atlas 3, row 6, column 7)
     - base: "stone/gray/b"
       rotation: 0
+    - mask: "1/corner"
+      rotation: 90
+      inverted: false
+    - base: "ground/light/a"
+      rotation: 180
   - # Tile 248 (atlas 3, row 7, column 0)
     - base: "stone/gray/a"
       rotation: 90
@@ -1865,6 +1890,11 @@ tiles:
   - # Tile 249 (atlas 3, row 7, column 1)
     - base: "stone/gray/a"
       rotation: 0
+    - mask: "1/corner"
+      rotation: 90
+      inverted: false
+    - base: "ground/light/a"
+      rotation: 270
   - # Tile 250 (atlas 3, row 7, column 2)
     - base: "stone/gray/b"
       rotation: 90
@@ -2441,7 +2471,7 @@ tiles:
     - base: "snow/common/7"
       rotation: 90
   - # Tile 310 (atlas 4, row 6, column 6)
-    - base: "sand/dark/a"
+    - base: "grass/straw/a"
       rotation: 180
     - mask: "1/half"
       rotation: 180
@@ -2449,7 +2479,7 @@ tiles:
     - base: "ground/light/a"
       rotation: 0
   - # Tile 311 (atlas 4, row 6, column 7)
-    - base: "sand/dark/a"
+    - base: "grass/straw/a"
       rotation: 270
     - mask: "1/half"
       rotation: 180
@@ -2457,7 +2487,7 @@ tiles:
     - base: "ground/light/a"
       rotation: 0
   - # Tile 312 (atlas 4, row 7, column 0)
-    - base: "sand/dark/a"
+    - base: "grass/straw/a"
       rotation: 90
     - mask: "1/half"
       rotation: 180
@@ -2465,7 +2495,7 @@ tiles:
     - base: "ground/light/a"
       rotation: 90
   - # Tile 313 (atlas 4, row 7, column 1)
-    - base: "sand/dark/a"
+    - base: "grass/straw/a"
       rotation: 0
     - mask: "1/half"
       rotation: 180
@@ -2473,7 +2503,7 @@ tiles:
     - base: "ground/light/a"
       rotation: 90
   - # Tile 314 (atlas 4, row 7, column 2)
-    - base: "sand/dark/a"
+    - base: "grass/straw/a"
       rotation: 90
     - mask: "1/half"
       rotation: 180
@@ -2569,7 +2599,7 @@ tiles:
     - mask: "1/corner"
       rotation: 180
       inverted: false
-    - base: "slabs/square/a"
+    - base: "ground/light/a"
       rotation: 90
   - # Tile 322 (atlas 5, row 0, column 2)
     - base: "ground/light/a"
@@ -2639,12 +2669,12 @@ tiles:
     - mask: "1/half"
       rotation: 90
       inverted: false
-    - base: "ground/dry/a"
+    - base: "ground/light/a"
       rotation: 180
     - mask: "1/corner"
       rotation: 0
       inverted: false
-    - base: "slabs/square/a"
+    - base: "stone/light/a"
       rotation: 0
   - # Tile 327 (atlas 5, row 0, column 7)
     - base: "snow/common/7"
@@ -2652,7 +2682,7 @@ tiles:
     - mask: "1/half"
       rotation: 90
       inverted: false
-    - base: "ground/dry/a"
+    - base: "ground/light/a"
       rotation: 180
     - mask: "1/corner"
       rotation: 0
@@ -2744,6 +2774,11 @@ tiles:
   - # Tile 337 (atlas 5, row 2, column 1)
     - base: "grass/winter_faded/a"
       rotation: 180
+    - mask: "1/diagonal"
+      rotation: 90
+      inverted: true
+    - base: "grass/winter_normal/a"
+      rotation: 270
   - # Tile 338 (atlas 5, row 2, column 2)
     - base: "grass/winter_faded/a"
       rotation: 0
@@ -2753,7 +2788,7 @@ tiles:
     - base: "grass/winter_normal/a"
       rotation: 0
   - # Tile 339 (atlas 5, row 2, column 3)
-    - base: "ground/light/a"
+    - base: "paving/square/a"
       rotation: 270
     - mask: "1/diagonal"
       rotation: 180
@@ -2769,7 +2804,7 @@ tiles:
     - base: "snow/common/6"
       rotation: 180
   - # Tile 341 (atlas 5, row 2, column 5)
-    - base: "ground/light/a"
+    - base: "paving/square/a"
       rotation: 180
     - mask: "1/diagonal"
       rotation: 180

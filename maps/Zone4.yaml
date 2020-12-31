@@ -658,7 +658,7 @@ tiles:
     - base: "grass/irregular/1"
       rotation: 180
   - # Tile 114 (atlas 1, row 6, column 2)
-    - base: "ground/light/a"
+    - base: "ground/common/a"
       rotation: 180
     - mask: "3/half"
       rotation: 0
@@ -671,7 +671,7 @@ tiles:
     - mask: "3/half"
       rotation: 0
       inverted: false
-    - base: "ground/light/a"
+    - base: "ground/common/a"
       rotation: 90
   - # Tile 116 (atlas 1, row 6, column 4)
     - base: "grass/common/d"
